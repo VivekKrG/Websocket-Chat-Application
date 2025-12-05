@@ -24,6 +24,6 @@ public class RawWebSocketConfig implements WebSocketConfigurer {
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(handler, "/rawws", "/chat")
                 .addInterceptors(interceptor)
-                .setAllowedOriginPatterns("*");
+                .setAllowedOrigins("*");
     }
 }
